@@ -273,7 +273,7 @@ $root-block-name: '.product-detail-one';
     &-img {
       img {
         width: 100%;
-        object-fit: contain;
+        object-fit: cover;
         object-position: center;
       }
     }
@@ -298,8 +298,9 @@ $root-block-name: '.product-detail-one';
     &-img {
       @include flex(center, center);
       img {
-        height: 100%;
-        object-fit: contain;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
       }
     }
   }
@@ -337,6 +338,10 @@ $root-block-name: '.product-detail-one';
     z-index: 99;
     @include w_h(100%, 261px);
     background: rgba($color: #000000, $alpha: 0.6);
+
+    @include screen(md) {
+      height: 164px;
+    }
   }
   &__btns {
     position: absolute;
