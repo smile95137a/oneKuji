@@ -47,8 +47,8 @@ const Header = () => {
           </div>
         </div>
         <div className="header__btns">
-          <div className="header__btn header__btn--login">登入</div>
-          <div className="header__btn header__btn--register">註冊</div>
+          <Link className="header__btn header__btn--login" to={'/login'}>登入</Link>
+          <Link className="header__btn header__btn--register" to={'/register'}>註冊</Link>
         </div>
       </div>
       <div className="header__marquee">

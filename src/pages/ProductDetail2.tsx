@@ -475,7 +475,7 @@ const ProductDetail2 = () => {
             <>
               <div className="product-detail-one__productIntroduce">
                 {products4.map((product, index) => (
-                  <div className="product-detail-one__productIntroduce-img">
+                  <div key={index} className="product-detail-one__productIntroduce-img">
                     <img src={product.imagePath} alt="" />
                   </div>
                 ))}
@@ -491,7 +491,7 @@ const ProductDetail2 = () => {
             <>
               <div className="product-detail-one__tickets">
                 {products5.map((product, index) => (
-                  <div className="product-detail-one__tickets-img">
+                  <div key={index} className="product-detail-one__tickets-img">
                     <img src={product.imagePath} alt="" />
                   </div>
                 ))}
@@ -507,7 +507,7 @@ const ProductDetail2 = () => {
             <>
               <div className="product-detail-one__boxs">
                 {products6.map((product, index) => (
-                  <div className="product-detail-one__boxs-img">
+                  <div key={index} className="product-detail-one__boxs-img">
                     <img src={product.imagePath} alt="" />
                   </div>
                 ))}

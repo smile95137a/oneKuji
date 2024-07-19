@@ -11,6 +11,7 @@ interface IProductCardProps {
   unitText?: string;
   title?: string;
   content?: string;
+  path?:string
 }
 
 const ProductCard: FC<IProductCardProps> = ({
@@ -23,11 +24,18 @@ const ProductCard: FC<IProductCardProps> = ({
   unitText = '',
   title = '',
   content = '',
+  path=''
 }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/productDetail1');
+    if (path) {
+      navigate('/productDetail1');
+    } else{
+      navigate('/productDetail2');
+
+    }
+   
   };
 
   return (
