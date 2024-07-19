@@ -38,7 +38,7 @@ $root-block-name: '.productCard';
       width: 93px;
       height: 41px;
       position: absolute;
-      top: 8px;
+      top: 12px;
       left: 8px;
       border-radius: 30px;
       background: #fe4206;
@@ -59,7 +59,7 @@ $root-block-name: '.productCard';
       background: #eb9838;
       border-radius: 30px;
       position: absolute;
-      bottom: 8px;
+      bottom: 12px;
       left: 8px;
       @include flex(center, center, column);
       font-size: 20px;
@@ -75,7 +75,7 @@ $root-block-name: '.productCard';
       height: 68px;
       @include flex(end, null, row);
       position: absolute;
-      bottom: 8px;
+      bottom: 12px;
       right: 8px;
       color: #fff;
       gap: 8px;
@@ -118,12 +118,18 @@ $root-block-name: '.productCard';
     gap: 8px;
     border-radius: 0 0 30px 30px;
     &-title {
+      font-size: 22px;
       font-weight: 500;
     }
 
     &-content {
       color: #7c7c7c;
       font-size: 14px;
+      font-weight: 500;
+      @include line-clamp(4);
+      @include screen(md) {
+        @include line-clamp(5);
+      }
     }
   }
 
