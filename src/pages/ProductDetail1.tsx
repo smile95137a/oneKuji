@@ -48,7 +48,7 @@ const ProductDetail1 = () => {
           <div className="breadcrumbs__item">首頁</div>
           <div className="breadcrumbs__item">扭蛋抽獎</div>
           <div className="breadcrumbs__item breadcrumbs__item--active">
-            首頁 / 扭蛋抽獎 / ️一番賞關於我轉生變成史萊姆這檔事(代理版)_FVAA
+            一番賞關於我轉生變成史萊姆這檔事(代理版)_FVAA
           </div>
         </div>
       </div>
