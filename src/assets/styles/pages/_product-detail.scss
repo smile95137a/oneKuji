@@ -4,15 +4,15 @@ $root-block-name: '.product-detail';
   $p: &;
   $p__text: #{$p}__text;
   $p__item: #{$p}__item;
-  padding: 64px;
-  @include screen(lg) {
-    padding: 8px;
+  padding: 0 16px;
+  @include screen(md) {
+    padding: 16px;
   }
   &__main {
     display: grid;
     grid-template-columns: 450px 1fr;
     grid-template-rows: auto 2fr;
-    @include screen(lg) {
+    @include screen(md) {
       grid-template-columns: 1fr;
       grid-auto-rows: auto;
     }
@@ -21,25 +21,35 @@ $root-block-name: '.product-detail';
   &__img {
     @include w_h(100%, 450px);
     grid-column: span 1;
-    grid-row: 2 / span 1;
-    @include screen(lg) {
+    grid-row: 1 / span 2;
+    @include screen(md) {
       grid-column: 1/-1;
       grid-row: 2;
       margin-left: 0;
+      height: 600px;
+    }
+    @include screen(xs) {
+      height: 335px;
     }
     img {
       @include w_h(100%, 100%);
       border-radius: 54px;
+      object-fit: cover;
+      object-position: top center;
     }
   }
 
   &__title {
     grid-column: 2 / span 1;
-    margin-left: 32px;
+    margin-left: 60px;
     @include screen(lg) {
+      margin-left: 40px;
+    }
+    @include screen(md) {
       grid-column: 1/-1;
       grid-row: 1;
       margin-left: 0;
+      margin-bottom: 32px;
     }
     #{ $p__text } {
       font-size: 35px;
@@ -50,37 +60,48 @@ $root-block-name: '.product-detail';
   &__other {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
-    margin-left: 32px;
+    margin-top: 40px;
+    margin-left: 60px;
     @include screen(lg) {
+      margin-left: 40px;
+    }
+    @include screen(md) {
       grid-column: 1/-1;
       grid-row: 3;
       margin-left: 0;
     }
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 8px;
+
     @include screen(lg) {
-      margin: 16px;
-      grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
     }
+
     &-img {
-      width: 180px;
-      height: 180px;
-      @include screen(lg) {
-        width: 90px;
-        height: 90px;
+      @include w_h(100%, 100%);
+      max-width: 180px;
+      max-height: 180px;
+      @include screen(md) {
+        max-width: 90px;
+        max-height: 90px;
       }
       img {
         @include w_h(100%, 100%);
         border-radius: 20px;
+        object-fit: contain;
+        object-position: top center;
       }
     }
   }
 
   &__action {
+    margin: 64px 0;
     @include flex(center, center);
     gap: 64px;
-    @include screen(lg) {
+    @include screen(md) {
       margin: 32px 0;
     }
     &-btn {
@@ -100,7 +121,7 @@ $root-block-name: '.product-detail';
     color: #7c7c7c;
     height: 132px;
     padding: 18px 0;
-    @include screen(lg) {
+    @include screen(md) {
       display: none;
     }
     &-money {
@@ -136,18 +157,18 @@ $root-block-name: '.product-detail';
 
   &__infos {
     @include flex(null, space-between);
+    margin-bottom: 64px;
   }
 
   &__info {
     width: 348px;
-    top: -84px;
-    left: 14946px;
-    gap: 0px;
-    opacity: 0px;
-    @include screen(lg) {
+
+    @include screen(md) {
       width: 100%;
     }
     &--one {
+      @include flex(null, null, column);
+      gap: 16px;
       #{$p__item} {
         @include flex;
         &-name {
@@ -163,7 +184,7 @@ $root-block-name: '.product-detail';
       color: #fe4206;
       width: 741px;
       @include flex(null, null, column);
-      @include screen(lg) {
+      @include screen(md) {
         display: none;
       }
       #{$p__item} {

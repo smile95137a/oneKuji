@@ -230,32 +230,6 @@ const products3 = [
   },
 ];
 
-const NextArrow = (props: any) => {
-  const { style, onClick } = props;
-  return (
-    <div
-      className={` slider__btn slider__btn--next`}
-      style={{ ...style }}
-      onClick={onClick}
-    >
-      <FaAngleRight />
-    </div>
-  );
-};
-
-const PrevArrow = (props: any) => {
-  const { style, onClick } = props;
-  return (
-    <div
-      className={`slider__btn slider__btn--prev`}
-      style={{ ...style }}
-      onClick={onClick}
-    >
-      <FaAngleLeft />
-    </div>
-  );
-};
-
 const MainPage = () => {
   return (
     <>

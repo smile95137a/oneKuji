@@ -1,66 +1,57 @@
 import React from 'react';
 import pd1 from '@/assets/image/pd1.png';
 import pd2 from '@/assets/image/pd2.png';
+import pImg2 from '@/assets/image/pd3.png';
 import ProductCard from '@/components/ProductCard';
 const ProductDetail1 = () => {
-  const imagepst = [
-    pd2,
-    pd2,
-    pd2,
-    pd2,
-    pd2,
-    pd2,
-    pd2,
-    pd2,
-    pd2,
-    pd2,
-    pd2,
-    pd2,
-    pd2,
-    pd2,
-    pd2,
-  ];
+  const imagepst = [pd2, pd2, pd2, pd2, pd2, pd2, pd2, pd2];
 
   const products3 = [
     {
-      imagePath: pd1,
+      imagePath: pImg2,
       imgStatus: '開抽中',
       balanceText: '剩餘100抽',
       money: '250',
       unitIcon: '金',
       unitText: '/抽',
-      title: '《我的英雄學院》~闖入~(日版)',
-      content:
-        '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
+      title: '大耳狗拿鐵色動物造型吊飾',
+      content: '',
       customClass: 'productCard--style2 productCard--like',
     },
     {
-      imagePath: pd1,
+      imagePath: pImg2,
       imgStatus: '開抽中',
       balanceText: '剩餘100抽',
       money: '250',
       unitIcon: '金',
       unitText: '/抽',
-      title: '《我的英雄學院》~闖入~(日版)',
-      content:
-        '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
+      title: '遊戲王桌上小物系列收藏(BOX)(隨機出貨)',
+      content: '',
       customClass: 'productCard--style2 productCard--like',
     },
     {
-      imagePath: pd1,
+      imagePath: pImg2,
       imgStatus: '開抽中',
       balanceText: '剩餘100抽',
       money: '250',
       unitIcon: '金',
       unitText: '/抽',
-      title: '《我的英雄學院》~闖入~(日版)',
-      content:
-        '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
+      title: '大耳狗拿鐵色動物造型吊飾',
+      content: '',
       customClass: 'productCard--style2 productCard--like',
     },
   ];
   return (
-    <div>
+    <>
+      <div className="breadcrumbs">
+        <div className="breadcrumbs__items">
+          <div className="breadcrumbs__item">首頁</div>
+          <div className="breadcrumbs__item">扭蛋抽獎</div>
+          <div className="breadcrumbs__item breadcrumbs__item--active">
+            首頁 / 扭蛋抽獎 / ️一番賞關於我轉生變成史萊姆這檔事(代理版)_FVAA
+          </div>
+        </div>
+      </div>
       <div className="product-detail">
         <div className="product-detail__main">
           <div className="product-detail__img">
@@ -192,7 +183,7 @@ const ProductDetail1 = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
