@@ -1,0 +1,129 @@
+$root-block-name: '.productCard';
+
+#{$root-block-name} {
+  $p: &;
+  $p__text: #{$p}__text;
+  $p__img-status: #{$p}__img-status;
+  width: 100%;
+  max-width: 397px;
+  min-height: 549px;
+  @include flex(center, center, column);
+  border-radius: 30px;
+  background: #fff;
+  &--style2 {
+    #{$p__img-status} {
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &--like {
+    background-color: #ffe7cc;
+  }
+
+  &__img {
+    width: 100%;
+    height: 396px;
+    img {
+      border-radius: 30px 30px 0 0;
+    }
+    position: relative;
+
+    &-status {
+      width: 93px;
+      height: 41px;
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      border-radius: 30px;
+      background: #fe4206;
+      color: #fff;
+      @include flex(center, center, column);
+    }
+    &-balance {
+      width: 140px;
+      height: 41px;
+      background: #eb9838;
+      border-radius: 30px;
+      @include flex(center, center, column);
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      #{$p__text} {
+        color: #fff;
+        letter-spacing: 2px;
+      }
+    }
+
+    &-price {
+      width: 150px;
+      height: 68px;
+      @include flex(end, null, row);
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      color: #fff;
+      gap: 8px;
+    }
+
+    &-money {
+      @include flex(end, null, column);
+      height: 50px;
+      #{$p__text} {
+        font-family: Noto Sans;
+        font-size: 50px;
+        font-weight: 600;
+        color: #fed706;
+      }
+    }
+
+    &-unit {
+      @include flex(end);
+      #{$p__text} {
+        letter-spacing: -1px;
+        color: #fff;
+        font-size: 14px;
+        &--icon {
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          background: #fff;
+          color: #eb9838;
+          font-size: 16px;
+          @include flex(center, center, column);
+        }
+      }
+    }
+  }
+
+  &__detail {
+    flex: 1;
+    width: 100%;
+    @include flex(null, null, column);
+    padding: 16px;
+    gap: 8px;
+    border-radius: 0 0 30px 30px;
+    &-title {
+      font-weight: 500;
+    }
+
+    &-content {
+      color: #7c7c7c;
+      font-size: 14px;
+    }
+  }
+
+  &__links {
+    @include flex;
+    gap: 16px;
+  }
+
+  &__infos {
+    @include flex(null, null, column);
+  }
+
+  &__info {
+    @include flex;
+  }
+}

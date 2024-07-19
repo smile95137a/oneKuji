@@ -1,0 +1,19 @@
+$root-block-name: '.mainpage';
+
+#{$root-block-name} {
+  $p: &;
+  $p__text: #{$p}__text;
+  @include flex(center, null, column);
+  gap: 64px;
+
+  &__products {
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 16px;
+    justify-items: center;
+    @include screen(lg) {
+      padding: 8px;
+    }
+  }
+}

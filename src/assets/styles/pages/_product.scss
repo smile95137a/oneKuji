@@ -1,0 +1,76 @@
+$root-block-name: '.product';
+
+#{$root-block-name} {
+  $p: &;
+  $p__text: #{$p}__text;
+
+  &__title {
+    @include flex(center, center);
+    #{$p__text} {
+      color: #e5d36a;
+      font-family: Noto Sans;
+      font-size: 60px;
+      font-weight: 400;
+      text-shadow: -2px 0 1px #000, 0 2px 1px #000, 2px 0 1px #000,
+        0 -2px 1px #000;
+    }
+  }
+  &__btns {
+    @include flex(center, center);
+    gap: 16px;
+    margin: 24px 0;
+    flex-wrap: wrap;
+  }
+  &__btn {
+    width: 170px;
+    height: 53px;
+    border-radius: 50px;
+    border: 2px solid #000000;
+    @include flex(center, center);
+    font-family: Noto Sans;
+    font-size: 25px;
+    font-weight: 400;
+
+    &--active {
+      background: #fed706;
+    }
+  }
+
+  &__list {
+    &-title {
+      position: relative;
+      margin: 48px 0 48px 0;
+      #{$p__text} {
+        font-family: Noto Sans;
+        font-size: 35px;
+        font-weight: 400;
+        @include flex(center, center);
+        color: #eb9838;
+      }
+    }
+
+    &-filter {
+      position: absolute;
+      top: 50%;
+      right: 24px;
+      transform: translateY(-50%);
+      width: 65px;
+      height: 59px;
+      border-radius: 15px;
+      border: 2px solid #000;
+      background: #eb9838;
+      color: #fff;
+      @include flex(center, center);
+    }
+    &-products {
+      padding: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 16px;
+      justify-items: center;
+      @include screen(lg) {
+        padding: 8px;
+      }
+    }
+  }
+}

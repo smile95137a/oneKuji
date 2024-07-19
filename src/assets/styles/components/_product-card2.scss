@@ -1,0 +1,106 @@
+$root-block-name: '.productCard2';
+
+#{$root-block-name} {
+  $p: &;
+  $p__text: #{$p}__text;
+  $p__img-status: #{$p}__img-status;
+
+  $p__img-balance: #{$p}__img-balance;
+  width: 100%;
+  min-height: 549px;
+  @include flex(null, null, column);
+  border-radius: 30px;
+  background: #fff;
+  &--a {
+    #{$p__img-balance} {
+      background: #fe4206;
+    }
+  }
+  &--last {
+    #{$p__img-balance} {
+      background: #eb9838;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        180deg,
+        rgba(217, 217, 217, 0) 0%,
+        rgba(0, 0, 0, 0.9) 95.65%
+      );
+      position: absolute;
+      top: 0;
+    }
+    img {
+      border-radius: 30px 30px 0 0;
+    }
+
+    position: relative;
+
+    &-status {
+      width: 93px;
+      height: 41px;
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      border-radius: 30px;
+      background: #fe4206;
+      color: #fff;
+      @include flex(center, center, column);
+    }
+    &-balance {
+      width: 260px;
+      height: 56px;
+      background: #38c0eb;
+      padding: 0 16px;
+      border-radius: 30px;
+      @include flex(center, space-between);
+      position: absolute;
+      bottom: -24px;
+      left: 8px;
+      z-index: 2;
+      #{$p__text} {
+        color: #fff;
+        letter-spacing: 2px;
+
+        &--num {
+        }
+      }
+    }
+  }
+
+  &__detail {
+    flex: 1;
+    width: 100%;
+    @include flex(null, null, column);
+    padding: 32px 16px;
+    gap: 8px;
+    border-radius: 0 0 30px 30px;
+    &-title {
+      font-family: Noto Sans;
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+
+  &__links {
+    @include flex;
+    gap: 16px;
+  }
+
+  &__infos {
+    @include flex(null, null, column);
+  }
+
+  &__info {
+    @include flex;
+  }
+}

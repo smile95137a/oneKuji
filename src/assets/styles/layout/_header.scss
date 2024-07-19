@@ -1,0 +1,146 @@
+$root-block-name: '.header';
+
+#{$root-block-name} {
+  $p: &;
+  $p__text: #{$p}__text;
+  $p__logo-img: #{$p}__logo-img;
+
+  width: 100vw;
+  @include flex(null, null, column);
+
+  &__main {
+    @include w_h(100%, 147px);
+    @include flex(center, null);
+    padding: 12px 120px;
+    background: #fff5ea;
+    @include screen(lg) {
+      padding: 12px 16px;
+    }
+  }
+
+  &__marquee {
+    @include w_h(100%, 81px);
+    @include flex(center, center);
+    background: #ffce58;
+    overflow: hidden;
+
+    #{$p__text} {
+      font-family: Noto Sans;
+      font-size: 18px;
+      font-weight: 400;
+      animation: marquee 5s linear infinite;
+    }
+  }
+
+  &__menu {
+    font-size: 64px;
+  }
+  &__logo {
+    margin-left: 40px;
+    @include w_h(132px, 132px);
+    &-img {
+      @include w_h(100%, 100%);
+    }
+  }
+
+  &__nav {
+    flex: 1;
+    margin-left: 62px;
+    @include screen(lg) {
+      margin: 0;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 246px;
+      height: 100%;
+      z-index: 20;
+      background: #fff;
+      padding: 40px;
+      transform: translateX(-100%);
+    }
+    &-items {
+      @include flex(center);
+      gap: 38px;
+      @include screen(lg) {
+        @include flex(null, null, column);
+      }
+    }
+
+    &-item {
+      width: 100px;
+      height: 36px;
+      font-family: Noto Sans TC;
+      font-size: 25px;
+      font-weight: 500;
+      @include screen(lg) {
+        width: 100%;
+        @include flex(center, space-between);
+        color: #eb9838;
+        font-family: Noto Sans;
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      #{$p__logo-img} {
+        display: none;
+        @include screen(lg) {
+          @include flex;
+          width: 108px;
+          height: 108px;
+        }
+      }
+
+      &--logo {
+        display: none;
+        @include screen(lg) {
+          width: 100%;
+          height: 120px;
+          @include flex(center, center);
+        }
+      }
+
+      &-icon {
+        display: none;
+        @include screen(lg) {
+          @include flex;
+          color: #eb9838;
+        }
+      }
+    }
+  }
+
+  &__btns {
+    width: 238px;
+    height: 55px;
+    @include flex(center, space-between);
+    @include screen(lg) {
+      flex: 1;
+      justify-content: end;
+      gap: 16px;
+    }
+  }
+  &__btn {
+    @include flex(center, center);
+    width: 110px;
+    height: 55px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    font-family: Noto Sans TC;
+    font-size: 25px;
+    font-weight: 500;
+
+    &--login {
+      background: #eb9838;
+      color: #fff;
+    }
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(150%);
+  }
+  to {
+    transform: translateX(-150%);
+  }
+}
