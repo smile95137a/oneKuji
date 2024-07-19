@@ -8,18 +8,8 @@ $root-block-name: '.mainpage';
   padding: 0 0 64px 0;
   &__products {
     padding: 24px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    @include flex(null, center);
+    flex-wrap: wrap;
     gap: 16px;
-    justify-items: center;
-
-    @include screen(lg) {
-      grid-template-columns: 1fr 1fr;
-    }
-    @include screen(md) {
-      grid-template-columns: 1fr;
-      padding: 8px;
-      gap: 16px;
-    }
   }
 }

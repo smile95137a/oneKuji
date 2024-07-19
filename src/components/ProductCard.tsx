@@ -59,8 +59,11 @@ const ProductCard: FC<IProductCardProps> = ({
         </div>
       </div>
       <div className="productCard__detail">
-        <div className="productCard__detail-title">{title}</div>
-        <div className="productCard__detail-content">{content}</div>
+        <div className="productCard__detail-title">
+          {title}
+          <br />
+          <span className="productCard__detail-text">{content}</span>
+        </div>
       </div>
     </div>
   );
