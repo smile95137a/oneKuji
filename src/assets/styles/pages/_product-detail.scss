@@ -213,21 +213,10 @@ $root-block-name: '.product-detail';
 
     &-products {
       margin-top: 24px;
-
       padding: 24px;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 397px));
       gap: 16px;
-      justify-items: center;
-
-      @include screen(lg) {
-        grid-template-columns: 1fr 1fr;
-      }
-      @include screen(md) {
-        grid-template-columns: 1fr;
-        padding: 8px;
-        gap: 16px;
-      }
     }
   }
 }
