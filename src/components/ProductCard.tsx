@@ -1,3 +1,4 @@
+import { log } from 'console';
 import React, { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -30,6 +31,7 @@ const ProductCard: FC<IProductCardProps> = ({
 
   const handleClick = () => {
     if (path) {
+      console.log(123);
       navigate('/productDetail1');
     } else {
       navigate('/productDetail2');
