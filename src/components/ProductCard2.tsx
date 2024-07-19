@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface IproductCard2Props {
   customClass?: string;
@@ -9,7 +10,7 @@ interface IproductCard2Props {
   title?: string;
 }
 
-const productCard2: FC<IproductCard2Props> = ({
+const ProductCard2: FC<IproductCard2Props> = ({
   customClass = '',
   imagePath,
   imgStatus = '',
@@ -17,8 +18,14 @@ const productCard2: FC<IproductCard2Props> = ({
   balanceNum = '',
   title = '',
 }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/productDetail2');
+  };
+
   return (
-    <div className={`productCard2 ${customClass}`}>
+    <div className={`productCard2 ${customClass}`} onClick={handleClick}>
       <div className="productCard2__img">
         <img src={imagePath} alt="productCard2 Image" />
         <div className="productCard2__img-detail">
@@ -37,4 +44,4 @@ const productCard2: FC<IproductCard2Props> = ({
   );
 };
 
-export default productCard2;
+export default ProductCard2;

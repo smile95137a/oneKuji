@@ -147,7 +147,7 @@ const products3 = [
   },
 ];
 
-function NextArrow(props: any) {
+const NextArrow = (props: any) => {
   const { style, onClick } = props;
   return (
     <div
@@ -158,7 +158,7 @@ function NextArrow(props: any) {
       <FaAngleRight />
     </div>
   );
-}
+};
 
 const PrevArrow = (props: any) => {
   const { style, onClick } = props;

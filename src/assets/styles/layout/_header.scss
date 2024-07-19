@@ -46,6 +46,7 @@ $root-block-name: '.header';
   &__nav {
     flex: 1;
     margin-left: 62px;
+
     @include screen(lg) {
       margin: 0;
       position: fixed;
@@ -57,6 +58,12 @@ $root-block-name: '.header';
       background: #fff;
       padding: 40px;
       transform: translateX(-100%);
+    }
+
+    &--open {
+      @include screen(lg) {
+        transform: translateX(0);
+      }
     }
     &-items {
       @include flex(center);
