@@ -45,6 +45,10 @@ $root-block-name: '.product';
         font-weight: 400;
         @include flex(center, center);
         color: #eb9838;
+        @include screen(md) {
+          font-size: 20px;
+          font-weight: 400;
+        }
       }
     }
 
@@ -60,15 +64,22 @@ $root-block-name: '.product';
       background: #eb9838;
       color: #fff;
       @include flex(center, center);
+      font-size: 24px;
     }
     &-products {
       padding: 24px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 16px;
       justify-items: center;
+
       @include screen(lg) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @include screen(md) {
+        grid-template-columns: 1fr;
         padding: 8px;
+        gap: 16px;
       }
     }
   }
