@@ -37,7 +37,10 @@ $root-block-name: '.header';
   }
   &__logo {
     margin-left: 40px;
-    @include w_h(132px, 132px);
+    @include w_h(132px, 132px);   
+    @include screen(lg) {
+      @include w_h(68px, 68px); 
+    }
     &-img {
       @include w_h(100%, 100%);
     }
