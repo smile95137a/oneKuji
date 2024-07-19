@@ -23,6 +23,7 @@ const products1 = [
     content:
       '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上',
     customClass: '',
+    path: '1',
   },
   {
     imagePath: pImg,
@@ -31,10 +32,11 @@ const products1 = [
     money: '250',
     unitIcon: '金',
     unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
+    title: '[日版] 一番賞《HUNTER×HUNTER 獵人》REVENGE OF SCARLET',
     content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
+      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上',
     customClass: '',
+    path: '1',
   },
   {
     imagePath: pImg,
@@ -43,10 +45,11 @@ const products1 = [
     money: '250',
     unitIcon: '金',
     unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
+    title: '[日版] 一番賞《HUNTER×HUNTER 獵人》REVENGE OF SCARLET',
     content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
+      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上',
     customClass: '',
+    path: '1',
   },
   {
     imagePath: pImg,
@@ -55,10 +58,11 @@ const products1 = [
     money: '250',
     unitIcon: '金',
     unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
+    title: '[日版] 一番賞《HUNTER×HUNTER 獵人》REVENGE OF SCARLET',
     content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
+      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上',
     customClass: '',
+    path: '1',
   },
   {
     imagePath: pImg,
@@ -67,10 +71,11 @@ const products1 = [
     money: '250',
     unitIcon: '金',
     unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
+    title: '[日版] 一番賞《HUNTER×HUNTER 獵人》REVENGE OF SCARLET',
     content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
+      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上',
     customClass: '',
+    path: '1',
   },
   {
     imagePath: pImg,
@@ -79,10 +84,11 @@ const products1 = [
     money: '250',
     unitIcon: '金',
     unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
+    title: '[日版] 一番賞《HUNTER×HUNTER 獵人》REVENGE OF SCARLET',
     content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
+      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上',
     customClass: '',
+    path: '1',
   },
 ];
 
@@ -273,6 +279,7 @@ const MainPage = () => {
                   unitText={product.unitText}
                   title={product.title}
                   content={product.content}
+                  path={product.path}
                 />
               ))}
             </div>

@@ -266,9 +266,15 @@ $root-block-name: '.product-detail-one';
     grid-auto-flow: row dense;
 
     gap: 16px;
+
+    @include screen(md) {
+      grid-template-columns: 1fr;
+    }
     &-img {
       img {
         height: 100%;
+        object-fit: contain;
+        object-fit: center;
       }
       &:nth-child(odd) {
         grid-row-end: span 9;
