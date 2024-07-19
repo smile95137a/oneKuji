@@ -18,321 +18,79 @@ const products1 = [
     content:
       '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
     customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
-  },  {
-    imagePath: pImg,
-    imgStatus: '開抽中',
-    balanceText: '剩餘100抽',
-    money: '250',
-    unitIcon: '金',
-    unitText: '/抽',
-    title: '《我的英雄學院》~闖入~(日版)',
-    content:
-      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
-    customClass: '',
-    path:'1'
   },
-  
+  {
+    imagePath: pImg,
+    imgStatus: '開抽中',
+    balanceText: '剩餘100抽',
+    money: '250',
+    unitIcon: '金',
+    unitText: '/抽',
+    title: '《我的英雄學院》~闖入~(日版)',
+    content:
+      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
+    customClass: '',
+  },
+  {
+    imagePath: pImg,
+    imgStatus: '開抽中',
+    balanceText: '剩餘100抽',
+    money: '250',
+    unitIcon: '金',
+    unitText: '/抽',
+    title: '《我的英雄學院》~闖入~(日版)',
+    content:
+      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
+    customClass: '',
+  },
+  {
+    imagePath: pImg,
+    imgStatus: '開抽中',
+    balanceText: '剩餘100抽',
+    money: '250',
+    unitIcon: '金',
+    unitText: '/抽',
+    title: '《我的英雄學院》~闖入~(日版)',
+    content:
+      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
+    customClass: '',
+  },
+  {
+    imagePath: pImg,
+    imgStatus: '開抽中',
+    balanceText: '剩餘100抽',
+    money: '250',
+    unitIcon: '金',
+    unitText: '/抽',
+    title: '《我的英雄學院》~闖入~(日版)',
+    content:
+      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
+    customClass: '',
+  },
+  {
+    imagePath: pImg,
+    imgStatus: '開抽中',
+    balanceText: '剩餘100抽',
+    money: '250',
+    unitIcon: '金',
+    unitText: '/抽',
+    title: '《我的英雄學院》~闖入~(日版)',
+    content:
+      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
+    customClass: '',
+  },
+  {
+    imagePath: pImg,
+    imgStatus: '開抽中',
+    balanceText: '剩餘100抽',
+    money: '250',
+    unitIcon: '金',
+    unitText: '/抽',
+    title: '《我的英雄學院》~闖入~(日版)',
+    content:
+      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時...',
+    customClass: '',
+  },
 ];
 
 const products2 = [
@@ -389,7 +147,7 @@ const products3 = [
   },
 ];
 
-const NextArrow = (props: any) => {
+function NextArrow(props: any) {
   const { style, onClick } = props;
   return (
     <div
@@ -400,7 +158,7 @@ const NextArrow = (props: any) => {
       <FaAngleRight />
     </div>
   );
-};
+}
 
 const PrevArrow = (props: any) => {
   const { style, onClick } = props;
@@ -431,7 +189,7 @@ const MainPage = () => {
       <div className="slider">
         <Slider {...settings}>
           {[...Array(7)].map((_, index) => (
-            <div key={index} className="slider__item" >
+            <div key={index} className="slider__item">
               <img
                 src={bg}
                 className="slider__item-img"
@@ -459,7 +217,6 @@ const MainPage = () => {
                   unitText={product.unitText}
                   title={product.title}
                   content={product.content}
-                  path={product.path}
                 />
               ))}
             </div>
