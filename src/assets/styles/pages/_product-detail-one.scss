@@ -276,12 +276,6 @@ $root-block-name: '.product-detail-one';
         object-fit: contain;
         object-fit: center;
       }
-      &:nth-child(odd) {
-        grid-row-end: span 9;
-      }
-      &:nth-child(even) {
-        grid-row-end: span 10;
-      }
     }
   }
 
