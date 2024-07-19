@@ -272,9 +272,9 @@ $root-block-name: '.product-detail-one';
     }
     &-img {
       img {
-        height: 100%;
+        width: 100%;
         object-fit: contain;
-        object-fit: center;
+        object-position: center;
       }
     }
   }
