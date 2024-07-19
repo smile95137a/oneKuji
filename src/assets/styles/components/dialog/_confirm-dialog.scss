@@ -67,7 +67,7 @@ $root-block-name: '.confirmDialog';
       border: 2px solid #000;
       opacity: 0px;
       @include flex(center, center);
-      font-family: Noto Sans;
+
       font-size: 25px;
       font-weight: 400;
 
@@ -108,7 +108,6 @@ $root-block-name: '.confirmDialog';
   }
 
   &__text {
-    font-family: Noto Sans;
     font-size: 25px;
     font-weight: 400;
     &--red {

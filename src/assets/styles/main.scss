@@ -31,6 +31,9 @@
 // ec6ab1 f29bcb f8cde5
 //
 
+* {
+  font-family: 'Arial', sans-serif;
+}
 .flex-auto {
   flex: auto;
 }
@@ -271,9 +274,9 @@ $letter-spacing-nums: 100;
     width: 100%;
     min-height: 764px;
     height: 100%;
-    padding: 64px;
-    @include screen(sm) {
-      padding: 16px;
+    padding: 0 12%;
+    @include screen(lg) {
+      padding: 0 4%;
     }
   }
 }

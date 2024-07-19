@@ -4,15 +4,19 @@ $root-block-name: '.mainpage';
   $p: &;
   $p__text: #{$p}__text;
   @include flex(center, null, column);
-  gap: 64px;
 
   &__products {
     padding: 24px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 16px;
     justify-items: center;
+
     @include screen(lg) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include screen(md) {
+      grid-template-columns: 1fr;
       padding: 8px;
     }
   }

@@ -4,7 +4,7 @@ $root-block-name: '.slider';
   $p: &;
   $p__text: #{$p}__text;
   $p__item: #{$p}__item;
-  margin-bottom: 48px;
+  margin: 24px 0;
   &__item {
     position: relative;
     &-img {

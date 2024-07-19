@@ -4,15 +4,13 @@ $root-block-name: '.mcard';
   $p: &;
   $p__text: #{$p}__text;
 
+  @include flex(null, null, column);
   border-radius: 30px;
   overflow: hidden;
-  @include flex(null, null, column);
-
+  width: 100%;
   &--login,
   &--register,
   &--mainpage {
-    width: 100%;
-    max-width: 1307px;
     min-height: 636px;
   }
 
@@ -23,7 +21,6 @@ $root-block-name: '.mcard';
     @include flex(center, center);
 
     #{$p__text} {
-      font-family: Noto Sans;
       font-size: 30px;
       font-weight: 400;
 

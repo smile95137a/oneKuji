@@ -25,7 +25,6 @@ $root-block-name: '.product-detail-one';
     grid-column: 2 / span 1;
     margin-left: 32px;
     #{ $p__text } {
-      font-family: Noto Sans;
       font-size: 35px;
       font-weight: 800;
     }
@@ -63,7 +62,7 @@ $root-block-name: '.product-detail-one';
       background: #fe4206;
       color: #fff;
       border-radius: 90px;
-      font-family: Noto Sans;
+
       font-size: 36px;
       font-weight: 900;
       &--status {
@@ -88,7 +87,7 @@ $root-block-name: '.product-detail-one';
       @include flex(center, end);
       #{$p__text} {
         line-height: 1;
-        font-family: Noto Sans;
+
         font-size: 96px;
         font-weight: 600;
         color: #fed706;
@@ -151,7 +150,6 @@ $root-block-name: '.product-detail-one';
   }
 
   &__item {
-    font-family: Noto Sans;
     font-size: 24px;
     font-weight: 400;
   }
@@ -229,7 +227,7 @@ $root-block-name: '.product-detail-one';
     @include flex(center, center);
     border: 2px solid #000;
     border-radius: 50px;
-    font-family: Noto Sans;
+
     font-size: 25px;
     font-weight: 400;
 
@@ -288,7 +286,6 @@ $root-block-name: '.product-detail';
       margin-left: 0;
     }
     #{ $p__text } {
-      font-family: Noto Sans;
       font-size: 35px;
       font-weight: 800;
     }
@@ -337,7 +334,7 @@ $root-block-name: '.product-detail';
       background: #fe4206;
       color: #fff;
       border-radius: 90px;
-      font-family: Noto Sans;
+
       font-size: 36px;
       font-weight: 900;
     }
@@ -355,7 +352,7 @@ $root-block-name: '.product-detail';
 
       #{$p__text} {
         line-height: 1;
-        font-family: Noto Sans;
+
         font-size: 96px;
         font-weight: 600;
         color: #fed706;
@@ -423,7 +420,6 @@ $root-block-name: '.product-detail';
   }
 
   &__item {
-    font-family: Noto Sans;
     font-size: 24px;
     font-weight: 400;
   }
@@ -431,7 +427,6 @@ $root-block-name: '.product-detail';
   &__likes {
     &-title {
       #{$p__text} {
-        font-family: Noto Sans;
         font-size: 35px;
         font-weight: 400;
       }
