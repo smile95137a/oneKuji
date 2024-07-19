@@ -9,21 +9,29 @@ $root-block-name: '.login';
   &__container {
     @include w_h(100%, 100%);
     @include flex(center, null, column);
-    padding: 32px;
+    padding: 64px;
     flex: 1;
+    @include screen(md) {
+      padding: 8px;
+    }
   }
   &__main {
     @include w_h(342px, 100%);
     @include flex(null, null, column);
     flex: 1;
+    @include screen(xs) {
+      @include w_h(100%, 100%);
+      max-width: 340px;
+    }
   }
   &__tab {
     width: 100%;
-    @include flex(center, space-between);
-
+    @include flex(center, center);
+    gap: 16px;
     &-btn {
       @include flex(center, center);
-      width: 152px;
+      width: 100%;
+      max-width: 152px;
       height: 48px;
       border-radius: 8px;
 

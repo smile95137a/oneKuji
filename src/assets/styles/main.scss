@@ -272,11 +272,17 @@ $letter-spacing-nums: 100;
   width: 100vw;
   &__main {
     width: 100%;
-    min-height: 764px;
+    min-height: 636px;
     height: 100%;
-    padding: 0 12%;
+    padding: 36px 12%;
     @include screen(lg) {
-      padding: 0 4%;
+      padding: 36px 4%;
+    }
+    @include screen(md) {
+      padding: 8px 4%;
+    }
+    @include screen(xs) {
+      min-height: auto;
     }
   }
 }
