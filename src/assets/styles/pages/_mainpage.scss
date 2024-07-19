@@ -4,7 +4,8 @@ $root-block-name: '.mainpage';
   $p: &;
   $p__text: #{$p}__text;
   @include flex(center, null, column);
-
+  gap: 36px;
+  padding: 0 0 64px 0;
   &__products {
     padding: 24px;
     display: grid;
@@ -18,6 +19,7 @@ $root-block-name: '.mainpage';
     @include screen(md) {
       grid-template-columns: 1fr;
       padding: 8px;
+      gap: 16px;
     }
   }
 }
