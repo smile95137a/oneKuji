@@ -13,11 +13,9 @@ const Header = () => {
         <div className="header__menu" onClick={toggleSlidebar}>
           <IoMenu />
         </div>
-        <div className="header__logo">
-          <Link to={'/main'}>
-            <img src={logoImg} className="header__logo-img" />
-          </Link>
-        </div>
+        <Link to={'/main'} className="header__logo">
+          <img src={logoImg} className="header__logo-img" />
+        </Link>
         <div
           className={isOpen ? 'header__nav header__nav--open' : 'header__nav'}
           onClick={closeSlidebar}
@@ -33,13 +31,13 @@ const Header = () => {
               </div>
             </Link>
             <Link className="header__nav-item" to={'/product'}>
-              一番賞
+              盲盒
               <div className="header__nav-item-icon">
                 <FaAngleRight />
               </div>
             </Link>{' '}
             <Link className="header__nav-item" to={'/product'}>
-              一番賞
+              扭蛋抽獎
               <div className="header__nav-item-icon">
                 <FaAngleRight />
               </div>
@@ -47,8 +45,12 @@ const Header = () => {
           </div>
         </div>
         <div className="header__btns">
-          <Link className="header__btn header__btn--login" to={'/login'}>登入</Link>
-          <Link className="header__btn header__btn--register" to={'/register'}>註冊</Link>
+          <Link className="header__btn header__btn--login" to={'/login'}>
+            登入
+          </Link>
+          <Link className="header__btn header__btn--register" to={'/register'}>
+            註冊
+          </Link>
         </div>
       </div>
       <div className="header__marquee">
