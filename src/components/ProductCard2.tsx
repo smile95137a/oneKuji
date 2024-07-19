@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-interface IproductCard2Props {
+interface IProductCard2Props {
   customClass?: string;
   imagePath: string;
   imgStatus?: string;
@@ -10,7 +10,7 @@ interface IproductCard2Props {
   title?: string;
 }
 
-const ProductCard2: FC<IproductCard2Props> = ({
+const ProductCard2: FC<IProductCard2Props> = ({
   customClass = '',
   imagePath,
   imgStatus = '',

@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-interface IproductCardProps {
+interface IProductCardProps {
   customClass?: string;
   imagePath: string;
   imgStatus?: string;
