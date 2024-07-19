@@ -3,17 +3,19 @@ $root-block-name: '.product-detail-one';
   $p: &;
   $p__text: #{$p}__text;
   $p__item: #{$p}__item;
-  padding: 64px;
+
   @include flex(center, center, column);
   @include screen(lg) {
     padding: 8px;
+    width: 100%;
   }
   &__main {
+    width: 100%;
     display: grid;
     grid-template-columns: 450px 1fr;
     grid-template-rows: auto 2fr;
     @include screen(lg) {
-      grid-template-columns: 1fr;
+      grid-template-columns: 100%;
       grid-auto-rows: auto;
     }
   }
@@ -62,6 +64,7 @@ $root-block-name: '.product-detail-one';
     &-btn {
       width: 265px;
       height: 72px;
+
       @include flex(center, center);
       background: #fe4206;
       color: #fff;
@@ -69,14 +72,29 @@ $root-block-name: '.product-detail-one';
       font-family: Noto Sans;
       font-size: 36px;
       font-weight: 900;
+      @include screen(lg) {
+        width: 156px;
+        height: 46.1px;
+        font-family: Noto Sans;
+        font-size: 20px;
+        font-weight: 900;
+      }
       &--status {
         width: 360px;
+        @include screen(lg) {
+          width: 196px;
+          height: 42px;
+        }
         background: #ffce58;
         color: #000;
         gap: 24px;
         img {
           width: 48px;
           height: 48px;
+          @include screen(lg) {
+            width: 26px;
+            height: 26px;
+          }
         }
       }
     }
@@ -163,14 +181,14 @@ $root-block-name: '.product-detail-one';
   &__products {
     padding: 24px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 16px;
   }
 
   &__productIntroduce {
     padding: 24px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 16px;
     &-img {
       img {

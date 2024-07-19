@@ -335,7 +335,7 @@ const ProductDetail2 = () => {
     }
   };
   return (
-    <div>
+    <>
       <div className="product-detail-one">
         <div className="product-detail-one__main">
           <div className="product-detail-one__img">
@@ -529,7 +529,7 @@ const ProductDetail2 = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
