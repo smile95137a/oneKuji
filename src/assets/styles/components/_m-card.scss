@@ -10,7 +10,8 @@ $root-block-name: '.mcard';
   width: 100%;
   &--login,
   &--register,
-  &--mainpage {
+  &--mainpage,
+  &--product-detail-one {
     min-height: 636px;
   }
 

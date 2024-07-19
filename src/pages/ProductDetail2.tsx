@@ -327,15 +327,18 @@ const ProductDetail2 = () => {
   const { openConfirmDialog } = useDialog();
   const handleClick = async () => {
     const result = await openConfirmDialog();
-    if (result) {
-      // 在這裡處理刪除操作
-      console.log('Confirmed: Deleting item...');
-    } else {
-      console.log('Cancelled: Delete action aborted.');
-    }
   };
   return (
     <>
+      <div className="breadcrumbs">
+        <div className="breadcrumbs__items">
+          <div className="breadcrumbs__item">首頁</div>
+          <div className="breadcrumbs__item">扭蛋抽獎</div>
+          <div className="breadcrumbs__item breadcrumbs__item--active">
+            一番賞關於我轉生變成史萊姆這檔事(代理版)_FVAA
+          </div>
+        </div>
+      </div>
       <div className="product-detail-one">
         <div className="product-detail-one__main">
           <div className="product-detail-one__img">
@@ -448,10 +451,9 @@ const ProductDetail2 = () => {
             </div>
           </div>
         </div>
-
         <Card
           title="商品一覽"
-          customClass="mcard--mainpage"
+          customClass="mcard--product-detail-one"
           content={
             <div className="product-detail-one__products">
               {products3.map((product, index) => (
@@ -470,12 +472,15 @@ const ProductDetail2 = () => {
 
         <Card
           title="賞品介紹"
-          customClass="mcard--mainpage"
+          customClass="mcard--product-detail-one"
           content={
             <>
               <div className="product-detail-one__productIntroduce">
                 {products4.map((product, index) => (
-                  <div key={index} className="product-detail-one__productIntroduce-img">
+                  <div
+                    key={index}
+                    className="product-detail-one__productIntroduce-img"
+                  >
                     <img src={product.imagePath} alt="" />
                   </div>
                 ))}
@@ -486,9 +491,13 @@ const ProductDetail2 = () => {
 
         <Card
           title="檢視抽況"
-          customClass="mcard--mainpage"
+          customClass="mcard--product-detail-one"
           content={
             <>
+              {' '}
+              <div className="product-detail-one__text">
+                剩餘數量：31 / 總數量：40
+              </div>
               <div className="product-detail-one__tickets">
                 {products5.map((product, index) => (
                   <div key={index} className="product-detail-one__tickets-img">
@@ -502,9 +511,12 @@ const ProductDetail2 = () => {
 
         <Card
           title="檢視抽況2"
-          customClass="mcard--mainpage"
+          customClass="mcard--product-detail-one"
           content={
             <>
+              <div className="product-detail-one__text">
+                剩餘數量：31 / 總數量：40
+              </div>
               <div className="product-detail-one__boxs">
                 {products6.map((product, index) => (
                   <div key={index} className="product-detail-one__boxs-img">
