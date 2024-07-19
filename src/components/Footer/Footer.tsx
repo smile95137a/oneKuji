@@ -4,8 +4,10 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer__logo">
-        <img src={logoImg} className="footer__logo-img" />
-        <p className="footer__text">@2024 再來一抽 版權所有</p>
+        <div className="footer__logo-img">
+          <img src={logoImg} />
+          <p className="footer__text">@2024 再來一抽 版權所有</p>
+        </div>
       </div>
       <div className="footer__main">
         <div className="footer__nav">
