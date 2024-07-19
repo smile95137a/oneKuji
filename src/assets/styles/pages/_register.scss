@@ -9,29 +9,39 @@ $root-block-name: '.register';
   &__container {
     @include w_h(100%, 100%);
     @include flex(center, null, column);
-    padding: 32px;
+    padding: 64px;
     flex: 1;
+    @include screen(md) {
+      padding: 64px 8px;
+    }
   }
   &__main {
-    @include w_h(342px, 100%);
+    @include w_h(320px, 100%);
     @include flex(null, null, column);
     flex: 1;
+    @include screen(xs) {
+      @include w_h(100%, 100%);
+      max-width: 320px;
+    }
   }
 
   &__tab {
     width: 100%;
     margin-bottom: 32px;
-    @include flex(center, center);
+    @include flex(center, space-between);
+    position: relative;
     &-line {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
       width: 1px;
       height: 16px;
       background: #908578;
-      margin: 0 32px;
     }
     &-btn {
       @include flex(center, center);
-      width: 152px;
-      height: 48px;
+      width: 140px;
+      height: 40px;
       color: #908578;
 
       &--active {
@@ -43,7 +53,8 @@ $root-block-name: '.register';
   }
   &__btn {
     @include flex;
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     height: 48px;
     background: #fff;
     border-radius: 100px;
@@ -65,7 +76,7 @@ $root-block-name: '.register';
   }
 
   &__divider {
-    margin: 32px 0;
+    margin: 12px 0;
     @include w_h(100%, 32px);
     @include flex(center, center);
     position: relative;
@@ -96,7 +107,7 @@ $root-block-name: '.register';
   &__register {
     flex: 1;
     width: 100%;
-    @include flex(center, center);
+    @include flex(end, center);
     #{$p__text} {
       color: red;
     }
