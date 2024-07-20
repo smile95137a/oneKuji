@@ -272,7 +272,7 @@ const Product: React.FC = () => {
           }`}
           onClick={() => handleBtnClick(products1, 'official', '官方一番賞')}
         >
-          {title}
+          官方一番賞
         </div>
         <div
           className={`product__btn ${

@@ -4,6 +4,7 @@ import React from 'react';
 import pImg from '@/assets/image/p.png';
 import { FaCaretDown, FaFilter } from 'react-icons/fa';
 import { CiSearch } from 'react-icons/ci';
+import ProductCard3 from '@/components/ProductCard3';
 const products1 = [
   {
     imagePath: pImg,
@@ -123,7 +124,7 @@ const Product2 = () => {
 
               <div className="product2__list-products">
                 {products1.map((product, index) => (
-                  <ProductCard
+                  <ProductCard3
                     key={index}
                     customClass={product.customClass}
                     imagePath={product.imagePath}

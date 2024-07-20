@@ -292,7 +292,6 @@ const MainPage = () => {
                   unitText={product.unitText}
                   title={product.title}
                   content={product.content}
-                  path={product.path}
                 />
               ))}
             </div>
