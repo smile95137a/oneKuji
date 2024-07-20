@@ -2,7 +2,7 @@ import React from 'react';
 import pd1 from '@/assets/image/pd1.png';
 import pd2 from '@/assets/image/pd2.png';
 import pImg2 from '@/assets/image/pd3.png';
-import ProductCard from '@/components/ProductCard';
+import ProductCard3 from '@/components/ProductCard3';
 const ProductDetail1 = () => {
   const imagepst = [pd2, pd2, pd2, pd2, pd2, pd2, pd2, pd2];
 
@@ -16,7 +16,7 @@ const ProductDetail1 = () => {
       unitText: '/抽',
       title: '大耳狗拿鐵色動物造型吊飾',
       content: '',
-      customClass: 'productCard--style2 productCard--like',
+      customClass: 'productCard3--style2 productCard3--like',
     },
     {
       imagePath: pImg2,
@@ -27,7 +27,7 @@ const ProductDetail1 = () => {
       unitText: '/抽',
       title: '遊戲王桌上小物系列收藏(BOX)(隨機出貨)',
       content: '',
-      customClass: 'productCard--style2 productCard--like',
+      customClass: 'productCard3--style2 productCard3--like',
     },
     {
       imagePath: pImg2,
@@ -38,7 +38,7 @@ const ProductDetail1 = () => {
       unitText: '/抽',
       title: '大耳狗拿鐵色動物造型吊飾',
       content: '',
-      customClass: 'productCard--style2 productCard--like',
+      customClass: 'productCard3--style2 productCard3--like',
     },
   ];
   return (
@@ -167,7 +167,7 @@ const ProductDetail1 = () => {
           </div>
           <div className="product-detail__likes-products">
             {products3.map((product, index) => (
-              <ProductCard
+              <ProductCard3
                 key={index}
                 customClass={product.customClass}
                 imagePath={product.imagePath}

@@ -10,8 +10,22 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
 import { FaAngleRight, FaAngleLeft } from 'react-icons/fa';
+import ProductCard3 from '@/components/ProductCard3';
 
 const products1 = [
+  {
+    imagePath: pImg,
+    imgStatus: '開抽中',
+    balanceText: '剩餘100抽',
+    money: '250',
+    unitIcon: '金',
+    unitText: '/抽',
+    title: '[日版] 一番賞《HUNTER×HUNTER 獵人》REVENGE OF SCARLET',
+    content:
+      '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上',
+    customClass: '',
+    path: '1',
+  },
   {
     imagePath: pImg,
     imgStatus: '開抽中',
@@ -177,7 +191,7 @@ const products3 = [
     unitText: '/抽',
     title: '大耳狗拿鐵色動物造型吊飾',
     content: '',
-    customClass: 'productCard--style2',
+    customClass: 'productCard3--style2 m-y-36',
   },
   {
     imagePath: pImg2,
@@ -188,7 +202,7 @@ const products3 = [
     unitText: '/抽',
     title: '遊戲王桌上小物系列收藏(BOX)(隨機出貨)',
     content: '',
-    customClass: 'productCard--style2',
+    customClass: 'productCard3--style2 m-y-36',
   },
   {
     imagePath: pImg2,
@@ -199,7 +213,7 @@ const products3 = [
     unitText: '/抽',
     title: '大耳狗拿鐵色動物造型吊飾',
     content: '',
-    customClass: 'productCard--style2',
+    customClass: 'productCard3--style2 m-y-36',
   },
   {
     imagePath: pImg2,
@@ -210,7 +224,7 @@ const products3 = [
     unitText: '/抽',
     title: '遊戲王桌上小物系列收藏(BOX)(隨機出貨)',
     content: '',
-    customClass: 'productCard--style2',
+    customClass: 'productCard3--style2 m-y-36',
   },
   {
     imagePath: pImg2,
@@ -221,7 +235,7 @@ const products3 = [
     unitText: '/抽',
     title: '大耳狗拿鐵色動物造型吊飾',
     content: '',
-    customClass: 'productCard--style2',
+    customClass: 'productCard3--style2 m-y-36',
   },
   {
     imagePath: pImg2,
@@ -232,7 +246,7 @@ const products3 = [
     unitText: '/抽',
     title: '遊戲王桌上小物系列收藏(BOX)(隨機出貨)',
     content: '',
-    customClass: 'productCard--style2',
+    customClass: 'productCard3--style2 m-y-36',
   },
 ];
 
@@ -268,7 +282,7 @@ const MainPage = () => {
           content={
             <div className="mainpage__products">
               {products1.map((product, index) => (
-                <ProductCard
+                <ProductCard3
                   key={index}
                   customClass={product.customClass}
                   imagePath={product.imagePath}
@@ -291,7 +305,7 @@ const MainPage = () => {
           content={
             <div className="mainpage__products">
               {products2.map((product, index) => (
-                <ProductCard
+                <ProductCard3
                   key={index}
                   customClass={product.customClass}
                   imagePath={product.imagePath}
@@ -313,7 +327,7 @@ const MainPage = () => {
           content={
             <div className="mainpage__products p-y-64">
               {products3.map((product, index) => (
-                <ProductCard
+                <ProductCard3
                   key={index}
                   customClass={product.customClass}
                   imagePath={product.imagePath}

@@ -2,6 +2,8 @@ import Login from '@/pages/Login/Login';
 import Main from '@/pages/Main/Main';
 import NotFound from '@/pages/NotFound/NotFound';
 import Product from '@/pages/Product/Product';
+import Product2 from '@/pages/Product/Product2';
+import Product3 from '@/pages/Product/Product3';
 import ProductDetail1 from '@/pages/ProductDetail1';
 import ProductDetail2 from '@/pages/ProductDetail2';
 import Register from '@/pages/Register/Register';
@@ -26,6 +28,14 @@ const GlobalRoutes: FC = () => {
     {
       path: '/product',
       element: <Product />,
+    },
+    {
+      path: '/product2',
+      element: <Product2 />,
+    },
+    {
+      path: '/product3',
+      element: <Product3 />,
     },
     {
       path: '/productDetail1',

@@ -8,6 +8,7 @@ interface IProductCard2Props {
   balanceText?: string;
   balanceNum?: string;
   title?: string;
+  productHeightText?: string;
 }
 
 const ProductCard2: FC<IProductCard2Props> = ({
@@ -17,6 +18,7 @@ const ProductCard2: FC<IProductCard2Props> = ({
   balanceText = '',
   balanceNum = '',
   title = '',
+  productHeightText = '',
 }) => {
   const navigate = useNavigate();
 
@@ -28,9 +30,12 @@ const ProductCard2: FC<IProductCard2Props> = ({
     <div className={`productCard2 ${customClass}`} onClick={handleClick}>
       <div className="productCard2__img">
         <img src={imagePath} alt="productCard2 Image" />
+        <div className="productCard2__img-pHeightText">{productHeightText}</div>
         <div className="productCard2__img-detail">
           <div className="productCard2__img-balance">
-            <p className="productCard2__text">{balanceText}</p>
+            <p className="productCard2__text productCard2__text--title">
+              {balanceText}
+            </p>
             <p className="productCard2__text productCard2__text--num">
               {balanceNum}
             </p>

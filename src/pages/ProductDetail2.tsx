@@ -1,6 +1,11 @@
 import React from 'react';
 import pd1 from '@/assets/image/pd1.png';
 import pd2 from '@/assets/image/pd2.png';
+import pdo1 from '@/assets/image/pdo1.png';
+import oo1 from '@/assets/image/oo1.png';
+import oo2 from '@/assets/image/oo2.png';
+import oo3 from '@/assets/image/oo3.png';
+import oo4 from '@/assets/image/oo4.png';
 import btnIcon from '@/assets/image/btn-icon.png';
 import ticket1 from '@/assets/image/ticket1.png';
 import ticketE from '@/assets/image/ticketE.png';
@@ -9,6 +14,7 @@ import boxClose from '@/assets/image/box-close.png';
 import Card from '@/components/MCard';
 import ProductCard2 from '@/components/ProductCard2';
 import { useDialog } from '@/context/DialogContext';
+import { Link } from 'react-router-dom';
 const ProductDetail2 = () => {
   const imagepst = [
     pd2,
@@ -30,114 +36,102 @@ const ProductDetail2 = () => {
 
   const products3 = [
     {
-      imagePath: pd1,
+      imagePath: pdo1,
       balanceText: 'A賞',
-      balanceNum: '3/3',
+      balanceNum: '22/30',
+      productHeightText: '約15cm',
+      title: '透明外殼支架 全12種隨機出貨',
+      customClass: 'productCard2--a',
+    },
+    {
+      imagePath: pdo1,
+      balanceText: '最後賞',
+      balanceNum: '3/13',
+      productHeightText: '約28cm',
+      title: 'B3特別海報',
+      customClass: 'productCard2--last',
+    },
+    {
+      imagePath: pdo1,
+      balanceText: 'B賞',
+      balanceNum: '0/3',
+      productHeightText: '',
       title: '《我的英雄學院》~闖入~(日版)',
       customClass: 'productCard2--a',
     },
     {
-      imagePath: pd1,
-      balanceText: '最後賞',
+      imagePath: pdo1,
+      balanceText: 'A賞',
       balanceNum: '3/3',
-      title: '《我的英雄學院》~闖入~(日版)',
-      customClass: 'productCard2--last',
-    },
-    {
-      imagePath: pd1,
-      balanceText: '最後賞',
-      balanceNum: '3/3',
+      productHeightText: '約24cm',
       title: '《我的英雄學院》~闖入~(日版)',
       customClass: '',
     },
     {
-      imagePath: pd1,
-      balanceText: '最後賞',
+      imagePath: pdo1,
+      balanceText: 'A賞',
       balanceNum: '3/3',
+      productHeightText: '',
       title: '《我的英雄學院》~闖入~(日版)',
       customClass: '',
     },
     {
-      imagePath: pd1,
-      balanceText: '最後賞',
+      imagePath: pdo1,
+      balanceText: 'A賞',
       balanceNum: '3/3',
+      productHeightText: '',
       title: '《我的英雄學院》~闖入~(日版)',
       customClass: '',
     },
     {
-      imagePath: pd1,
-      balanceText: '最後賞',
+      imagePath: pdo1,
+      balanceText: 'A賞',
       balanceNum: '3/3',
+      productHeightText: '約24cm',
       title: '《我的英雄學院》~闖入~(日版)',
       customClass: '',
     },
     {
-      imagePath: pd1,
-      balanceText: '最後賞',
+      imagePath: pdo1,
+      balanceText: 'A賞',
       balanceNum: '3/3',
+      productHeightText: '',
       title: '《我的英雄學院》~闖入~(日版)',
       customClass: '',
     },
     {
-      imagePath: pd1,
-      balanceText: '最後賞',
+      imagePath: pdo1,
+      balanceText: 'A賞',
       balanceNum: '3/3',
-      title: '《我的英雄學院》~闖入~(日版)',
-      customClass: '',
-    },
-    {
-      imagePath: pd1,
-      balanceText: '最後賞',
-      balanceNum: '3/3',
-      title: '《我的英雄學院》~闖入~(日版)',
-      customClass: '',
-    },
-    {
-      imagePath: pd1,
-      balanceText: '最後賞',
-      balanceNum: '3/3',
-      title: '《我的英雄學院》~闖入~(日版)',
-      customClass: '',
-    },
-    {
-      imagePath: pd1,
-      balanceText: '最後賞',
-      balanceNum: '3/3',
-      title: '《我的英雄學院》~闖入~(日版)',
-      customClass: '',
-    },
-    {
-      imagePath: pd1,
-      balanceText: '最後賞',
-      balanceNum: '3/3',
+      productHeightText: '',
       title: '《我的英雄學院》~闖入~(日版)',
       customClass: '',
     },
   ];
   const products4 = [
     {
-      imagePath: pd1,
+      imagePath: oo1,
       balanceText: 'A賞',
       balanceNum: '3/3',
       title: '《我的英雄學院》~闖入~(日版)',
       customClass: 'productCard2--a',
     },
     {
-      imagePath: pd1,
+      imagePath: oo2,
       balanceText: '最後賞',
       balanceNum: '3/3',
       title: '《我的英雄學院》~闖入~(日版)',
       customClass: 'productCard2--last',
     },
     {
-      imagePath: pd1,
+      imagePath: oo3,
       balanceText: '最後賞',
       balanceNum: '3/3',
       title: '《我的英雄學院》~闖入~(日版)',
       customClass: '',
     },
     {
-      imagePath: pd1,
+      imagePath: oo4,
       balanceText: '最後賞',
       balanceNum: '3/3',
       title: '《我的英雄學院》~闖入~(日版)',
@@ -461,6 +455,7 @@ const ProductDetail2 = () => {
                   key={index}
                   customClass={product.customClass}
                   imagePath={product.imagePath}
+                  productHeightText={product.productHeightText}
                   balanceText={product.balanceText}
                   balanceNum={product.balanceNum}
                   title={product.title}
@@ -476,14 +471,30 @@ const ProductDetail2 = () => {
           content={
             <>
               <div className="product-detail-one__productIntroduce">
-                {products4.map((product, index) => (
-                  <div
-                    key={index}
-                    className="product-detail-one__productIntroduce-img"
-                  >
-                    <img src={product.imagePath} alt="" />
-                  </div>
-                ))}
+                <div className="product-detail-one__productIntroduce-box product-detail-one__productIntroduce-box--one">
+                  {products4
+                    .filter((_, index) => index % 2 !== 0)
+                    .map((product, index) => (
+                      <div
+                        key={index}
+                        className="product-detail-one__productIntroduce-img"
+                      >
+                        <img src={product.imagePath} alt="" />
+                      </div>
+                    ))}
+                </div>
+                <div className="product-detail-one__productIntroduce-box product-detail-one__productIntroduce-box--two">
+                  {products4
+                    .filter((_, index) => index % 2 === 0)
+                    .map((product, index) => (
+                      <div
+                        key={index}
+                        className="product-detail-one__productIntroduce-img"
+                      >
+                        <img src={product.imagePath} alt="" />
+                      </div>
+                    ))}
+                </div>
               </div>
             </>
           }
@@ -527,6 +538,12 @@ const ProductDetail2 = () => {
             </>
           }
         />
+      </div>
+
+      <div className="product-detail-one__backBtns">
+        <Link className="product-detail-one__backBtn" to={'/product'}>
+          返回一番賞
+        </Link>
       </div>
       <div className="product-detail-one__option">
         <div className="product-detail-one__btns">

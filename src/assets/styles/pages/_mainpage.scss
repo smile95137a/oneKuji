@@ -16,7 +16,7 @@ $root-block-name: '.mainpage';
     @include screen(lg) {
       grid-template-columns: 1fr 1fr;
     }
-    @include screen(md) {
+    @include screen(xs) {
       grid-template-columns: 1fr;
       padding: 8px;
       gap: 16px;

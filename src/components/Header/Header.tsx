@@ -30,13 +30,13 @@ const Header = () => {
                 <FaAngleRight />
               </div>
             </Link>
-            <Link className="header__nav-item" to={'/product'}>
+            <Link className="header__nav-item" to={'/product2'}>
               盲盒
               <div className="header__nav-item-icon">
                 <FaAngleRight />
               </div>
             </Link>{' '}
-            <Link className="header__nav-item" to={'/product'}>
+            <Link className="header__nav-item" to={'/product3'}>
               扭蛋抽獎
               <div className="header__nav-item-icon">
                 <FaAngleRight />
