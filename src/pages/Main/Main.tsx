@@ -24,7 +24,6 @@ const products1 = [
     content:
       '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上',
     customClass: '',
-    path: '1',
   },
   {
     imagePath: pImg,
@@ -37,7 +36,6 @@ const products1 = [
     content:
       '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上',
     customClass: '',
-    path: '1',
   },
   {
     imagePath: pImg,
@@ -50,7 +48,6 @@ const products1 = [
     content:
       '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上',
     customClass: '',
-    path: '1',
   },
   {
     imagePath: pImg,
@@ -63,7 +60,6 @@ const products1 = [
     content:
       '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上',
     customClass: '',
-    path: '1',
   },
   {
     imagePath: pImg,
@@ -76,7 +72,6 @@ const products1 = [
     content:
       '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上',
     customClass: '',
-    path: '1',
   },
   {
     imagePath: pImg,
@@ -89,7 +84,6 @@ const products1 = [
     content:
       '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上',
     customClass: '',
-    path: '1',
   },
   {
     imagePath: pImg,
@@ -102,7 +96,6 @@ const products1 = [
     content:
       '台灣最人氣【一番賞】線上抽選網站與日本0時差同步開抽！即時、方便、公開！台灣最人氣【一番賞】線上',
     customClass: '',
-    path: '1',
   },
 ];
 
@@ -192,6 +185,7 @@ const products3 = [
     title: '大耳狗拿鐵色動物造型吊飾',
     content: '',
     customClass: 'productCard3--style2 m-y-36',
+    path: '1',
   },
   {
     imagePath: pImg2,
@@ -203,6 +197,7 @@ const products3 = [
     title: '遊戲王桌上小物系列收藏(BOX)(隨機出貨)',
     content: '',
     customClass: 'productCard3--style2 m-y-36',
+    path: '1',
   },
   {
     imagePath: pImg2,
@@ -214,6 +209,7 @@ const products3 = [
     title: '大耳狗拿鐵色動物造型吊飾',
     content: '',
     customClass: 'productCard3--style2 m-y-36',
+    path: '1',
   },
   {
     imagePath: pImg2,
@@ -225,6 +221,7 @@ const products3 = [
     title: '遊戲王桌上小物系列收藏(BOX)(隨機出貨)',
     content: '',
     customClass: 'productCard3--style2 m-y-36',
+    path: '1',
   },
   {
     imagePath: pImg2,
@@ -236,6 +233,7 @@ const products3 = [
     title: '大耳狗拿鐵色動物造型吊飾',
     content: '',
     customClass: 'productCard3--style2 m-y-36',
+    path: '1',
   },
   {
     imagePath: pImg2,
@@ -247,6 +245,7 @@ const products3 = [
     title: '遊戲王桌上小物系列收藏(BOX)(隨機出貨)',
     content: '',
     customClass: 'productCard3--style2 m-y-36',
+    path: '1',
   },
 ];
 
@@ -338,6 +337,7 @@ const MainPage = () => {
                   unitText={product.unitText}
                   title={product.title}
                   content={product.content}
+                  path={product.path}
                 />
               ))}
             </div>
