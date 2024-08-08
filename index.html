@@ -1,13 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一番賞 - 动漫周边抽奖</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* 基本样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.user-actions button {
+    margin-left: 10px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
+.register {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+.banner {
+    background-color: #ffd700;
+    height: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content-wrapper {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 1200px; /* 设置最大宽度 */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.category-filters {
+    margin-bottom: 20px;
+}
+
+.category-filters button {
+    margin-right: 10px;
+    padding: 5px 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.category-filters button.active {
+    background-color: #ffd700;
+    border-color: #ffd700;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.buy-button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 20px 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 1240px) {
+    .content-wrapper {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    .user-actions {
+        margin-top: 10px;
+    }
+
+    .products {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .content-wrapper {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .category-filters {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .category-filters button {
+        margin-bottom: 10px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="一番賞 logo">
+            </div>
+            <ul>
+                <li><a href="#">一番賞</a></li>
+                <li><a href="#">專賣</a></li>
+                <li><a href="#">搜尋商城</a></li>
+            </ul>
+            <div class="user-actions">
+                <button class="login">登入</button>
+                <button class="register">註冊</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <!-- 轮播图或横幅内容 -->
+    </div>
+
+    <main>
+        <div class="content-wrapper">
+            <section class="product-list">
+                <h1>一番賞</h1>
+                <div class="category-filters">
+                    <button class="active">全部一番賞</button>
+                    <button>人氣一番賞</button>
+                    <button>新品推薦</button>
+                </div>
+                <div class="products">
+                    <!-- 产品卡片示例 -->
+                    <div class="product-card">
+                        <img src="product1.jpg" alt="产品图片">
+                        <h3>《鬼滅之刃》一番賞</h3>
+                        <p>價格: 250 元</p>
+                        <button class="buy-button">立即購買</button>
+                    </div>
+                    <!-- 重复上述结构以添加更多产品卡片 -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <!-- 页脚内容 -->
+        </div>
+    </footer>
+</body>
 </html>
